@@ -1,0 +1,70 @@
+aside{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    gap: 2%;
+    height: 90vh;
+    background-color: rgba(227, 227, 227, 0.314);
+    margin-left: 2vw;
+    position: fixed;
+    border-radius: 5px;
+}
+
+aside a{
+    color: black;
+}
+
+main{
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+#search-bar{
+    width: 98%;
+    border-width: 1.5px;
+    border-radius: 5px;
+    height: 5vh;
+    padding-left: 2%;
+    margin-bottom: 2vh;
+}
+
+.post{
+    margin-bottom: 5vh;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: rgba(227, 227, 227, 0.314);
+}
+
+.buttons-section{
+    display: flex;
+    gap: 5%;
+}
+
+.like-section{
+    display: flex;
+    gap: 18%;
+}
+
+.comment-section{
+    display: flex;
+    gap: 33%;
+}
+
+.like-button{
+    width: 2vw;
+}
+
+.comment-button{
+    width: 1.8vw;
+}
+
+.like-button, .comment-button {
+    transition: fill 0.3s ease; /* Optional: for smooth transition */
+}
+
+.like-button:hover, .comment-button:hover {
+    fill: #FF0000; /* Change to the desired color */
+}
