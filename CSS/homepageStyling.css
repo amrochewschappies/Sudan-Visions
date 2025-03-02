@@ -73,7 +73,7 @@ main{
     background-color: rgb(253, 111, 111);
     position: fixed;
     left: 78%;
-    top: 33%;
+    top: 13%;
     padding: 0.5%;
     width: 12%;
     display: flex;
@@ -94,6 +94,7 @@ main{
 
 #post-text{
     width: 100%;
+    max-width: 100%;
     height: 80%;
     margin-bottom: 2%;
     border-radius: 2%;
@@ -103,6 +104,7 @@ main{
 #new-post-button{
     width: 10%;
     height: 8%;
+    background-color: rgb(253, 111, 111);
 }   
 
 #cancel-button{

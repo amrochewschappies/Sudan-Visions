@@ -1,0 +1,67 @@
+main{
+    transform: translateX(2%);
+}
+
+#login-selection{
+    width: 340px;
+    background-color: rgba(227, 227, 227, 0.789);
+    height: 10vh;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+}
+
+.buttons{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 6%;
+    transition: all 1s ease;
+    display: block;
+}
+
+#sign-up-button{
+    background-color: rgba(227, 227, 227, 0.789);
+}
+
+.toggled{
+    pointer-events: none;
+}
+
+input {
+    display: block;
+    width: 330px;
+    height: 15px;
+    margin: 1% 0;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 9px;
+    padding-bottom: 0px;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+}
+
+label{
+    transform: translateY(2px);
+    transform: translateX(4px);
+    position: absolute;
+    font-size: 0.8rem;
+    pointer-events: none;
+    color: gray;
+}
+
+#sign-up-form {
+    display: none;
+}
+
+#sign-up-form, #login-form{
+    transition: opacity .5s ease;
+}
+
+#login-submit-button, #sign-up-submit-button{
+    margin-top: 1%;
+    width: 22.5%;
+    height: 43px;
+    border-radius: 13px;
+}

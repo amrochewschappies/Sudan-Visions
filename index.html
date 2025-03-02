@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./CSS/homepageStyling.css">
     <link rel="stylesheet" href="./CSS/navigationBarStyling.css">
     <script src="./Javascript/homePage.js" defer></script>
-    <script type="module"> import { loadNavbar } from "../Javascript/navigationBar.js"
+    <script type="module"> import { loadNavbar } from "./Javascript/navigationBar.js"
         loadNavbar("Home")
     </script>
 </head>
@@ -37,74 +37,77 @@
     </aside>
 
     <main>
-        <input type="text" id="search-bar" placeholder="search">
-        <section id="post-container">
+        <div id="post-button">
+            <p>New Post</p>
+        </div>  
 
-            <div id="post-button">
-                <p>New Post</p>
-            </div>
-
-            <div class="post">
-                <p class="author">author</p>
-                <p class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
-                    deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
-                    quo omnis temporibus, eveniet quis similique.
-                </p>
-                <div class="buttons-section">
-                    <div class="like-section">
-                        <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
-                        <p class="like-count">0</p>
-                    </div>
-                    <div class="comment-section">
-                        <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
-                        <p class="comment-count">0</p>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <p class="author">author</p>
-                <p class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
-                    deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
-                    quo omnis temporibus, eveniet quis similique.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
-                    deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
-                    quo omnis temporibus, eveniet quis similique.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
-                    deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
-                    quo omnis temporibus, eveniet quis similique.
-                </p>
-                <div class="buttons-section">
-                    <div class="like-section">
-                        <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
-                        <p class="like-count">0</p>
-                    </div>
-                    <div class="comment-section">
-                        <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
-                        <p class="comment-count">0</p>
-                    </div>                   
-                </div>
-            </div>
-            <div class="post">
-                <p class="author">author</p>
-                <p class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
-                    deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
-                    quo omnis temporibus, eveniet quis similique.
-                </p>
-                <div class="buttons-section">
-                    <div class="like-section">
-                        <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
-                        <p class="like-count">0</p>
-                    </div>
-                    <div class="comment-section">
-                        <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
-                        <p class="comment-count">0</p>
+        <div id="content-wrapper">
+            <input type="text" id="search-bar" placeholder="search">
+        
+            <section id="post-container">
+    
+                <div class="post">
+                    <p class="author">author</p>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
+                        deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
+                        quo omnis temporibus, eveniet quis similique.
+                    </p>
+                    <div class="buttons-section">
+                        <div class="like-section">
+                            <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
+                            <p class="like-count">0</p>
+                        </div>
+                        <div class="comment-section">
+                            <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
+                            <p class="comment-count">0</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="post">
+                    <p class="author">author</p>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
+                        deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
+                        quo omnis temporibus, eveniet quis similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
+                        deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
+                        quo omnis temporibus, eveniet quis similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
+                        deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
+                        quo omnis temporibus, eveniet quis similique.
+                    </p>
+                    <div class="buttons-section">
+                        <div class="like-section">
+                            <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
+                            <p class="like-count">0</p>
+                        </div>
+                        <div class="comment-section">
+                            <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
+                            <p class="comment-count">0</p>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="post">
+                    <p class="author">author</p>
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a mollitia,
+                        deleniti quos laudantium quibusdam iste atque veniam nostrum totam impedit dolorem numquam ullam,
+                        quo omnis temporibus, eveniet quis similique.
+                    </p>
+                    <div class="buttons-section">
+                        <div class="like-section">
+                            <img src="./Images/heart-svgrepo-com.svg" alt="Like button" class="like-button">
+                            <p class="like-count">0</p>
+                        </div>
+                        <div class="comment-section">
+                            <img src="./Images/comment-4-svgrepo-com.svg" alt="Comment button" class="comment-button"> 
+                            <p class="comment-count">0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
 </body>

@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll(".like-button, .comment-button");
 const body = document.querySelector("body");
 const main = document.querySelector("main");
-const blurElements = document.querySelectorAll("aside, #post-container, #search-bar");
+const blurElements = document.querySelectorAll("aside, #content-wrapper");
 const postContainer = document.querySelector("#post-container");
 
 buttons.forEach(button => {
@@ -21,16 +21,21 @@ postButton.addEventListener("mouseover", function(){
     body.style.cursor = "pointer";
 })
 
-postButton.addEventListener("mouseleave", function(){
+function postButtonColor(){
     postButton.style.backgroundColor = "rgb(253, 111, 111)";
     body.style.cursor = "default";
-})
+}
 
-postButton.addEventListener("click", function(){
+postButton.addEventListener("mouseleave", postButtonColor);
 
+function postButtonFunctionallity(){
     blurElements.forEach(element => {
         element.style.filter = "blur(7px)";   
     });
+    
+    postButton.removeEventListener("mouseleave", postButtonColor);
+    postButton.removeEventListener("click", postButtonFunctionallity);
+    body.style.cursor = "default";
 
     let postTemplate = document.createElement("div");
     postTemplate.classList.add("new-post");
@@ -46,5 +51,11 @@ postButton.addEventListener("click", function(){
             element.style.filter = "blur(0px)";   
         });
         postTemplate.remove();
+        postButton.addEventListener("click", postButtonFunctionallity);
+        postButton.addEventListener("mouseleave", postButtonColor);
+        postButton.style.backgroundColor = "rgb(253, 111, 111)";
     })
-})
+};
+
+postButton.addEventListener("click", postButtonFunctionallity);
+
