@@ -1,7 +1,5 @@
 const navPages = [
     {name: "Home" , href: '/Rasha-Foundation/Home/homePage.html'},
-    {name: "Our Work" , href: '/Rasha-Foundation/Our Work/work.html'},
-    {name: "The Team" , href: '/Rasha-Foundation/Meet the team/ourTeamPage.html'},
     {name: "Profile" , href: '/Sudan-Visions/Login/login.php'},
     {name: "Contact" , href: '/Rasha-Foundation/Contact/contact.html'}
 ];
